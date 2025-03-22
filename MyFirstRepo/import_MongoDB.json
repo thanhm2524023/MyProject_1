@@ -1,0 +1,64 @@
+{
+	{
+		"hoten": "Ngô Quốc Thanh",
+		"Diachi": "Sóc Trăng",
+		"Nganhhoc": "Hệ thống thông tin",
+		"Lop": "Thac sĩ ứng dụng K31",
+		"NamSinh": "1994"
+	},
+	{
+		"hoten": "Trần Minh Trí",
+		"Diachi": "Sóc Trăng",
+		"Nganhhoc": "Hệ thống thông tin",
+		"Lop": "Thac sĩ ứng dụng K31",
+		"NamSinh": "1999"
+	}
+}
+
+//LOP
+{
+	
+	ma: "CTH626",
+	ten: "IoT and Cloud K31"
+	SV: [
+		{
+			mssv: "M2524023",
+			hoten: "Ngô Quốc Thanh",
+			ngaysinh: "1/1/1994",
+			email: "thanhm2524023@gstudent.ctu.edu.vn",
+			diachi: {
+				xa: "An Hiệp",
+				huyen: "Châu Thành",
+				tinh: "Sóc Trăng",
+			}
+		},
+		{
+			mssv: "M2524025",
+			hoten: "Trần Minh Trí",
+			ngaysinh: "1/1/1999",
+			email: "trim2524025@gstudent.ctu.edu.vn",
+			diachi: {
+				xa: "Phường 1",
+				huyen: "TP.Sóc Trăng",
+				tinh: "Sóc Trăng",
+			}
+		}
+	]
+}
+
+
+//SINH_VIEN
+{
+  "_id": ObjectId("67da2e9ee5d3d94b86df88bf"),
+  "mssv": "M2524023",
+  "hoten": "Ngô Quốc Thanh",
+  "ngaysinh": "1/1/2000",
+  "email": "thanhm2524023@gstudent.ctu.edu.vn",
+  "diachi": {
+    "xa": "An Hiệp",
+    "huyen": "Châu Thành",
+    "tinh": "Sóc Trăng",
+    }
+}
+
+
