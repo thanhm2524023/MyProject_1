@@ -1,0 +1,62 @@
+// C++ code
+//
+
+#include<LiquidCrystal.h>
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+int ledDo = 8;
+int ledVang = 6;
+int ledXanh = 7;
+
+String str = "Tat man hinh LCD, bat den LED len";
+  
+void setup()
+{
+  pinMode(led, OUTPUT);
+  //digitalWrite(led, HIGH);
+  
+  lcd.begin(16, 2);
+//  lcd.setCursor(0, 0);
+ // lcd.print(str);
+//  delay(1000);
+  
+}
+
+void loop()
+{
+  
+  int n = str.length();
+  lcd.clear(); 
+  for (int i = 0; i<n; i++){
+    lcd.setCursor(i, 0);  
+    String text = str.substring(i, i+1);
+    lcd.print(text);
+    if(i>15){
+
+      lcd.scrollDisplayLeft();
+    }
+    delay(100); 
+  }
+  
+   delay(500); 
+  
+  for (int i = 0; i<n; i++){
+    lcd.clear();  
+    lcd.setCursor(0, 0);  
+    lcd.print(str.substring(i, i + 16));
+    delay(100); 
+  }
+  
+  lcd.noDisplay();
+  delay(1000);
+  digitalWrite(led, HIGH);
+  delay(1000);
+  lcd.clear(); 
+  lcd.display();
+  delay(1000);
+  digitalWrite(led, LOW);
+ 
+}
+
+
+
+
